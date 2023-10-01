@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "CHALECO DE LANILLA MARRON",
+        "imagen": "./images/valen10.jpeg",
+        "precio": 45000
+    },
+    {
+        "id": 2,
+        "nombre": "CATSUIT",
+        "imagen": "./images/valen5.jpeg",
+        "precio": 25000
+    },
+    {
+        "id": 3,
+        "nombre": "POLLERA ECOCUERO TABLEADA NEGRA",
+        "imagen": "./images/valen6.jpeg",
+        "precio": 15000
+    },
+    {
+        "id": 4,
+        "nombre": "TOP NEGRO VOLADO",
+        "imagen": "./images/valen7.jpeg",
+        "precio": 30000
+    },
+    {
+        "id": 5,
+        "nombre": "POLERA BLANCA",
+        "imagen": "./images/valen8.jpeg",
+        "precio": 40000
+    },
+    {
+        "id": 6,
+        "nombre": "PARACHUTE BEIGE",
+        "imagen": "./images/valen9.jpeg",
+        "precio": 50000
+    }
+]
