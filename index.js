@@ -22,12 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // // Función para calcular el precio con descuento
-    // function calcularPrecioConDescuento(precio) {
-    //     // Aplica un 15% de descuento
-    //     return precio * 0.85;
-    // }
-
     // Función para abrir el sidebar del carrito
     function openCartSidebar() {
         cartSidebar.classList.add("open");
@@ -60,10 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let precio = product.precio * quantity;
 
-        if (product.tieneDescuento) {
-            precio = calcularPrecioConDescuento(precio);
-        }
-
         cartItem.innerHTML = `
             <img src="${product.imagen}" alt="${product.nombre}">
             <span>${product.nombre} (x${quantity})</span>
@@ -87,18 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // ACTULIZAR PRECIO TOTAL
         updateCartTotal();
-
-        // // MOSTRAR TOASTIFY
-        // Toastify({
-        //     text: "Añadido al carrito",
-        //     duration: 3000,
-        //     gravity: "bottom",
-        //     position: "right",
-        //     style: {
-        //         background: "rgb(46, 211, 46)", // Cambia el color de fondo a verde 
-        //         color: "#FAFAFA",
-        //     },
-        // }).showToast();
 
 
         const removeButtons = document.querySelectorAll(".remove-button");
@@ -196,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 productDiv.classList.add("product");
                 productDiv.innerHTML = `
                     <button class="remove-button" data-id="${product.id}">
-                        <img src="./images/cruz_roja.png" alt="Eliminar">
+                        <img src="./images/cruz_roja.png" alt="Borrar">
                     </button>
                     <img src="${product.imagen}" alt="${product.nombre}">
                     <h2>${product.nombre}</h2>
