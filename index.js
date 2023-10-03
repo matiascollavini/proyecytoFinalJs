@@ -88,17 +88,17 @@ document.addEventListener("DOMContentLoaded", function () {
         // ACTULIZAR PRECIO TOTAL
         updateCartTotal();
 
-        // MOSTRAR TOASTIFY
-        Toastify({
-            text: "Añadido al carrito",
-            duration: 3000,
-            gravity: "bottom",
-            position: "right",
-            style: {
-                background: "rgb(46, 211, 46)", // Cambia el color de fondo a verde 
-                color: "#FAFAFA",
-            },
-        }).showToast();
+        // // MOSTRAR TOASTIFY
+        // Toastify({
+        //     text: "Añadido al carrito",
+        //     duration: 3000,
+        //     gravity: "bottom",
+        //     position: "right",
+        //     style: {
+        //         background: "rgb(46, 211, 46)", // Cambia el color de fondo a verde 
+        //         color: "#FAFAFA",
+        //     },
+        // }).showToast();
 
 
         const removeButtons = document.querySelectorAll(".remove-button");
@@ -187,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Obtener los datos del archivo JSON utilizando fetch
-    fetch("Productos.json")
+    fetch("./productos.json")
         .then(response => response.json())
         .then(data => {
             // Recorrer los datos y generar la estructura HTML
