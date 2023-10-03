@@ -200,15 +200,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     </button>
                     <img src="${product.imagen}" alt="${product.nombre}">
                     <h2>${product.nombre}</h2>
-                    ${product.tieneDescuento
-                        ? `
-                        <span class="original-price discounted">$${product.precio.toFixed(2)}</span>
-                        
-                        `
-                        : `
-                        <span class="original-price">$${product.precio.toFixed(2)}</span>
-                        `
-                    }
                     <div class="counter">
                         <button class="decrement">-</button>
                         <span class="quantity">0</span>
